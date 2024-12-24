@@ -1,0 +1,347 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1E3148;
+}
+.logo{
+    width: 7rem;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: "Questrial", sans-serif;
+    padding: .5rem;
+    transition: 500ms;
+    border-radius: 50px;
+}
+header ul li a:hover{
+    padding: .5rem;
+    border-radius: 50px;
+    background-color: white;
+    color: #1E3148;
+}
+.space{
+    width: 100px;
+}
+
+
+/* Section Video Inicio */
+.video {
+    width: 100%;
+    height: 100vh; /* Ajusta el video al alto de la ventana */
+    object-fit: cover; /* Escala el video para cubrir */
+}
+
+.video-texto {
+    position: absolute; /* Posiciona el contenido encima del video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ocupa todo el espacio del video */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 7rem;
+    padding: 2rem;
+    color: white; /* Asegura que el texto sea visible */
+    z-index: 1; /* Encima del video */
+}
+
+.video-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.video-txt h3 {
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 1000; /* Más negrita */
+    letter-spacing: 0.09em;
+}
+
+.video-txt button {
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 50px;
+    background-color: #1E3148;
+    color: white;
+    border: 0px;
+    font-family: "Questrial", sans-serif;
+
+}
+
+.videos-iconos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin-left: 3rem;
+}
+
+.videos-iconos ul li {
+    list-style: none;
+}
+
+.videos-iconos ul li a svg {
+    fill: rgb(0, 0, 0); /* Asegura que los íconos sean visibles */
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.waffles-competition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.waffle-competition-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Questrial", sans-serif;
+}
+
+
+@media (max-width: 720px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul li a{
+        font-size: 20px;
+    }
+    .logo{
+        margin-bottom: .4rem;
+    }
+    .video-texto{
+        display: none;
+    }
+    .video{
+        width: 100%;
+        height: 100%; /* Ajusta según la necesidad */
+    }
+    .waffles-competition{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .waffle-competition-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: .7rem;
+        margin: 2rem .4rem; 
+    }
+    .waffle-competition-txt p{
+        font-size: 1.3rem;
+    }
+    .voley{
+        width: 98%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .voleyTexto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: "Questrial", sans-serif;
+    }
+    .voleySuper {
+        margin: 1rem;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 10px;
+        margin-top: -3rem;
+        background-color: yellow;
+    }
+    .voleySuper h2{
+        margin-bottom: .4rem;
+    }
+
+
+
+    .location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+    .location h2{
+        font-family: "Questrial", sans-serif;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+    .location P {
+        font-family: "Questrial", sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Questrial", sans-serif;
+        background-color: #1E3148;
+        color: #fffae5;
+    }
+    .redes h2{
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .linea{
+        width: 90%;
+        height: 1px;
+        background-color:  #fffae5;
+        margin: 1rem 0rem;
+    }
+    .iconos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0rem 0rem;
+    }
+    .iconoRedes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+    }
+    .iconoRedes p{
+        color: #fffae5;
+    }
+    .iconoRedes svg{
+        width: 3rem;
+    }
+    .hr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .carta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        font-family: "Questrial", sans-serif;
+        margin-top: 2rem;
+    }
+    .carta h2{
+        text-align: center;
+    }
+    .dulce{
+        background-color: yellow;
+        width: 80%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0rem;
+    }
+    .lineaMenu{
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+        border: 1px solid black;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    .waffle{
+        margin: .5rem 0rem;
+    }
+
+    .salado{
+        background-color: #1E3148;
+        width: 80%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0rem;
+        color: white;
+    }
+    .lineaBlanca{
+        width: 100%;
+        height: 100%;
+        background-color: #1E3148;
+        border: 1px solid white;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    .waffle{
+        margin: .5rem 0rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .1rem;
+    }
+    .waffle img{
+        width: 3rem;
+    }
+    .waffle p{
+        font-size: 1.2rem;
+    }
+    .linea h3{
+        font-size: 2rem;
+    }
+    .lineaBlanca h3{
+        font-size: 2rem;
+    }
+    .waffleSalado{
+        margin: .5rem 0rem;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .1rem;
+        font-size: 1.2rem;
+    }
+    .fino{
+        font-size: .9rem;
+    }
+
+}
