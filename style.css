@@ -198,6 +198,7 @@ header ul li a:hover{
         align-items: center;
         flex-direction: column;
         padding: 2rem 0rem;
+        margin: 1rem
     }
     .location h2{
         font-family: "Questrial", sans-serif;
@@ -209,6 +210,7 @@ header ul li a:hover{
         font-family: "Questrial", sans-serif;
         margin-bottom: 1rem;
     }
+
 
     .redes{
         display: flex;
@@ -235,20 +237,20 @@ header ul li a:hover{
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem;
         margin: 0rem 0rem;
     }
     .iconoRedes{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: .4rem;
+        gap: .2rem;
     }
     .iconoRedes p{
         color: #fffae5;
     }
     .iconoRedes svg{
-        width: 3rem;
+        width: 2rem;
     }
     .hr{
         display: flex;
