@@ -43,11 +43,16 @@ header ul li a:hover{
 }
 
 
+
 /* Section Video Inicio */
 .video {
     width: 100%;
     height: 100vh; /* Ajusta el video al alto de la ventana */
     object-fit: cover; /* Escala el video para cubrir */
+    pointer-events: none; /* Deshabilita la interacción del usuario */
+    user-select: none; /* Evita la selección del video */
+    width: 100%; /* Ajusta el tamaño del video (opcional) */
+    height: auto;
 }
 
 .video-texto {
