@@ -297,7 +297,7 @@ header ul li a:hover{
         margin: .3rem;
         border-radius: 20px;    
     }
-    .lineaMenu h3{
+    .menuTitulo{
         font-size: 2rem !important;
     }
     .waffle{
@@ -335,12 +335,6 @@ header ul li a:hover{
     }
     .waffle p{
         font-size: 1.2rem;
-    }
-    .linea h3{
-        font-size: 2rem;
-    }
-    .lineaBlanca h3{
-        font-size: 2rem;
     }
     .waffleSalado{
         margin: .5rem 0rem;
