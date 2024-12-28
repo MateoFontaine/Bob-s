@@ -9,6 +9,6 @@ window.addEventListener('load', () => {
         const mainContent = document.getElementById('main-content');
         mainContent.style.display = 'block'; // Muestra el contenido principal
       }, 500); // Tiempo para el desvanecimiento
-    }, 1550); // 3000 ms = duración del splash screen
+    }, 1000); // 3000 ms = duración del splash screen
   });
   
