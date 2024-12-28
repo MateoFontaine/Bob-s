@@ -281,7 +281,7 @@ header ul li a:hover{
     }
     .dulce{
         background-color: yellow;
-        width: 80%;
+        width: 90%;
         border-radius: 20px;
         display: flex;
         justify-content: center;
@@ -294,8 +294,8 @@ header ul li a:hover{
         background-color: yellow;
         border: 1px solid black;
         padding: 1rem;
-        margin: 1rem;
-        border-radius: 20px;
+        margin: .3rem;
+        border-radius: 20px;    
     }
     .waffle{
         margin: .5rem 0rem;
@@ -303,7 +303,7 @@ header ul li a:hover{
 
     .salado{
         background-color: #1E3148;
-        width: 80%;
+        width: 90%;
         border-radius: 20px;
         display: flex;
         justify-content: center;
@@ -317,7 +317,7 @@ header ul li a:hover{
         background-color: #1E3148;
         border: 1px solid white;
         padding: 1rem;
-        margin: 1rem;
+        margin: .3rem;
         border-radius: 20px;
     }
     .waffle{
@@ -393,6 +393,62 @@ header ul li a:hover{
       opacity: 0; /* Desaparecer */
     }
   }
+
+  .nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Questrial", sans-serif;
+    margin-top: 1.3rem;
+    gap: 1rem;
+  }
+  .quienesSomos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0rem 1rem;
+  }
+  .mision{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    border-radius: 15px;
+    gap: .3rem;
+    margin: 0rem 1rem;
+  }
+  .vision{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    border-radius: 15px;
+    gap: .3rem;
+    margin: 0rem 1rem;
+  }
+  .ambiente{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    border-radius: 15px;
+    gap: .3rem;
+    margin: 0rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
   
   
 }
