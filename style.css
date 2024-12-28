@@ -351,7 +351,6 @@ header ul li a:hover{
     .fino{
         font-size: .9rem;
     }
-
 /* Estilos para la pantalla de carga */
 #splash-screen {
     position: fixed;
@@ -365,34 +364,49 @@ header ul li a:hover{
     align-items: center;
     z-index: 9999; /* Asegura que esté encima de todo */
     overflow: hidden; /* Evita desbordes durante la animación */
-  }
-  
-  #splash-screen img {
-    max-width: 200px; /* Ajusta el tamaño inicial del logo */
+}
+
+#splash-screen img {
+    max-width: 200px; /* Tamaño inicial del logo */
     height: auto;
-    animation: shrink-and-move 2s ease forwards; /* Añade la animación */
-  }
-  
-  /* Estilo para ocultar la pantalla de carga después */
-  #main-content {
-    display: block;
-  }
-  
-  /* Animación: achicar y mover hacia arriba */
-  @keyframes shrink-and-move {
+    animation: pulse 1.5s infinite ease-in-out; /* Animación de latido */
+}
+
+/* Estilo para ocultar la pantalla de carga después */
+#splash-screen.hide img {
+    animation: shrink-and-move 1s ease forwards; /* Animación de mover hacia arriba */
+}
+
+#main-content {
+    display: none; /* Oculta el contenido principal inicialmente */
+}
+
+/* Animación: efecto de latido */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Leve agrandamiento */
+    }
+}
+
+/* Animación: achicar y mover hacia arriba */
+@keyframes shrink-and-move {
     0% {
-      transform: scale(1) translateY(0); /* Tamaño normal */
-      opacity: 1;
+        transform: scale(1) translateY(0); /* Posición inicial */
+        opacity: 1;
     }
     70% {
-      transform: scale(0.5) translateY(-30px); /* Achicar y mover un poco */
-      opacity: 1;
+        transform: scale(0.5) translateY(-30px); /* Achicar y mover un poco */
+        opacity: 1;
     }
     100% {
-      transform: scale(0.5) translateY(-100vh); /* Mover hacia arriba */
-      opacity: 0; /* Desaparecer */
+        transform: scale(0.5) translateY(-100vh); /* Mover hacia arriba */
+        opacity: 0; /* Desaparecer */
     }
-  }
+}
+
 
   .nosotros{
     display: flex;
