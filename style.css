@@ -298,7 +298,7 @@ header ul li a:hover{
         border-radius: 20px;    
     }
     .lineaMenu h3{
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
     .waffle{
         margin: .5rem 0rem;
