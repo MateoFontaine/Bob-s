@@ -1,13 +1,12 @@
 window.addEventListener('load', () => {
   const splashScreen = document.getElementById('splash-screen');
-  
-  // Asegúrate de que todo está cargado antes de ocultar el splash screen
-  splashScreen.style.transition = 'opacity 0.5s ease';
-  splashScreen.style.opacity = '0'; // Desvanece el splash screen
-  
-  splashScreen.addEventListener('transitionend', () => {
-    // Cuando la transición termine, oculta completamente el splash screen
-    splashScreen.style.display = 'none';
+
+  // Agregar una clase para la animación
+  splashScreen.classList.add('hide');
+
+  // Esperar el final de la animación antes de ocultar completamente el splash screen
+  splashScreen.addEventListener('animationend', () => {
+    splashScreen.style.display = 'none'; // Oculta el splash screen
     const mainContent = document.getElementById('main-content');
     mainContent.style.display = 'block'; // Muestra el contenido principal
   });
