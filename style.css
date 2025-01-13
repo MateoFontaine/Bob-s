@@ -463,6 +463,8 @@ header ul li a:hover{
   
 }
 
+@media (min-width: 720px){
+
 header{
     display: flex;
     justify-content: center;
@@ -798,4 +800,6 @@ gap: .3rem;
 margin: 0rem 1rem;
 margin-bottom: 1rem;
 width: 80%;
+}
+
 }
